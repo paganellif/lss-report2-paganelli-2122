@@ -63,13 +63,50 @@
     \end{frame}
 
     \begin{frame}{Continuous Integration}
-
+        \begin{itemize}
+            \item \textbf{Build} - Fase di compilazione e packaging.
+            \item \textbf{Test}
+            \begin{itemize}
+                \item \textit{Unit Testing} - Fase di testing della business logic.
+                \item \textit{UI Testing} - Fase di testing della interfaccia grafica.
+            \end{itemize}
+        \end{itemize}
     \end{frame}
 
     \begin{frame}{Continuous Delivery}
-
+        \begin{itemize}
+            \item \textbf{Release}
+            \begin{itemize}
+                \item \textit{Alpha} - Fase di rilascio a scopo di test interno.
+                \item \textit{Beta} - Fase di rilascio a scopo di test esterno.
+                \item \textit{Prod} - Fase di rilascio a scopo di pubblicazione sugli store.
+            \end{itemize}
+        \end{itemize}
     \end{frame}
 
     \begin{frame}{Continuous Inspection}
-
+        \begin{columns}[onlytextwidth]
+            \begin{column}{0.4\textwidth}
+                \begin{itemize}
+                    \item \textbf{Test}
+                        \begin{itemize}
+                            \item \textit{Unit Testing} - Fase di testing della business logic.
+                            \item \textit{UI Testing} - Fase di testing della interfaccia grafica.
+                        \end{itemize}
+                    \item \textbf{Analysis}
+                        \begin{itemize}
+                            \item \textit{SAST} - Fase di analisi statica del codice.
+                            \item \textit{SCA} - Fase di analisi delle dipendenze.
+                            \item \textit{Sonar} - Fase di upload dei report su SonarQube.
+                        \end{itemize}
+                \end{itemize}
+            \end{column}
+            \begin{column}{0.6\textwidth}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[width=1\textwidth]{img/tesi-2-Page-19.drawio.png}
+                \end{figure}
+            \end{column}
+            
+        \end{columns}
     \end{frame}
