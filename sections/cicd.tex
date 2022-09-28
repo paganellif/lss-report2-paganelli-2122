@@ -49,7 +49,7 @@
             \begin{column}{0.5\textwidth}
                 \begin{figure}[H]
                     \centering
-                    \includegraphics[width=1\textwidth]{img/tesi-13-branching.drawio.png}
+                    \includegraphics[width=0.9\textwidth]{img/tesi-13-branching.drawio.png}
                 \end{figure}
             \end{column}
         \end{columns}
@@ -63,23 +63,35 @@
     \end{frame}
 
     \begin{frame}{Continuous Integration}
-        \begin{itemize}
-            \item \textbf{Build} - Fase di compilazione e packaging.
-            \item \textbf{Test}
+    \begin{itemize}
+        \item Integrazione molto frequente di piccole modifiche al flusso di sviluppo principale.
+        \item Ad ogni modifica il codice attraversa la pipeline progettata per validare compilazione, packaging, business logic e interfaccia grafica.
+        \item Coinvolge i branch \textit{dev}, \textit{feature} e \textit{bugfix} (tramite merge request).
+        \item Stages:
             \begin{itemize}
-                \item \textit{Unit Testing} - Fase di testing della business logic.
-                \item \textit{UI Testing} - Fase di testing della interfaccia grafica.
+                \item \textbf{Build} - Fase di compilazione e packaging.
+                \item \textbf{Test}
+                \begin{itemize}
+                    \item \textit{Unit Testing} - Fase di testing della business logic.
+                    \item \textit{UI Testing} - Fase di testing della interfaccia grafica.
+                \end{itemize}
             \end{itemize}
         \end{itemize}
     \end{frame}
 
     \begin{frame}{Continuous Delivery}
         \begin{itemize}
-            \item \textbf{Release}
+            \item Rilascio molto frequente di piccole modifiche al flusso di sviluppo principale.
+            \item Ogni piccola modifica apportata al codice se passa con successo la fase di integrazione deve essere rilasciata come nuova versione della applicazione.
+            \item Coinvolge i branch \textit{dev}, \textit{test} e \textit{main}.
+            \item Stages:
             \begin{itemize}
-                \item \textit{Alpha} - Fase di rilascio a scopo di test interno.
-                \item \textit{Beta} - Fase di rilascio a scopo di test esterno.
-                \item \textit{Prod} - Fase di rilascio a scopo di pubblicazione sugli store.
+                \item \textbf{Release}
+                \begin{itemize}
+                    \item \textit{Alpha} - Fase di rilascio a scopo di test interno.
+                    \item \textit{Beta} - Fase di rilascio a scopo di test esterno.
+                    \item \textit{Prod} - Fase di rilascio a scopo di pubblicazione sugli store.
+                \end{itemize}
             \end{itemize}
         \end{itemize}
     \end{frame}
