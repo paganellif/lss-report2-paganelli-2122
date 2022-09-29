@@ -23,6 +23,9 @@
 \usepackage{natbib}
 \usepackage{hyperref}
 
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+  
 \lstdefinelanguage{Kotlin}{
   comment=[l]{//},
   commentstyle={\color{gray}\ttfamily},
